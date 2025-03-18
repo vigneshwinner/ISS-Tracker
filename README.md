@@ -53,18 +53,16 @@ Once the API is running, to access and test the endpoints:
     - Returns all available timestamps in the dataset
 * curl "http://127.0.0.1:5000/epochs?limit=5&offset=2"
     - Filters epochs using **limit** and **offset** query parameters
-* curl "http://127.0.0.1:5000/epochs/<specific epoch>"
+* curl "http://127.0.0.1:5000/epochs/*specific epoch*"
     - Fetches ISS position and velocity for a specific epoch
-* curl "http://127.0.0.1:5000/epochs/<specific epoch>/speed"
+* curl "http://127.0.0.1:5000/epochs/*specific epoch*/speed"
     - Computes the ISS speed at a specific epoch
-* curl "https://127.0.0.1:5000/epochs/<specific epoch>/location"
+* curl "https://127.0.0.1:5000/epochs/*specific epoch*/location"
     - Computes the ISS latitude, longitude, altitude, and geoposition for a specific epoch
 * curl http://127.0.0.1:5000/now
     - Finds the closest timestamp to the current time and returns real-time ISS data 
 
 
-***Running Containerized Unit Tests***
-* Tests ensure API functionality and correctness of calculations:
-
+***Running Containerized Unit Tests (Tests ensure API functionality and correctness of calculations):***
 1. Start containers (if not running): docker-compose up --build -d
 2. Run unit tests inside Flask container: docker-compose exec flask-app pytest test_iss_tracker.py
