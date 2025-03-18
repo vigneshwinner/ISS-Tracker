@@ -66,3 +66,7 @@ Once the API is running, to access and test the endpoints:
 ***Running Containerized Unit Tests (Tests ensure API functionality and correctness of calculations):***
 1. Start containers (if not running): docker-compose up --build -d
 2. Run unit tests inside Flask container: docker-compose exec flask-app pytest test_iss_tracker.py
+
+
+***Software Diagram***
+![Software Diagram](diagram.png)
