@@ -15,7 +15,7 @@ services:
             dockerfile: Dockerfile
         depends_on:
             - redis-db
-        image: vigneshwinner/flask_iss_tracker:1.0
+        image: vigneshwinner/iss_tracker:1.0
         ports:
             - "5000:5000"
 
