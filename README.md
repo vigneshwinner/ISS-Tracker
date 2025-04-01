@@ -41,8 +41,8 @@ This dataset contains 15 days of ISS position and velocity data and is constantl
     - The Flask API will run locally at http://localhost:5000
 
 **OR (pull directly from DockerHub):** 
-1. docker pull vigneshwinner/flask_iss_tracker:1.0
-2. docker run -p 5000:5000 vigneshwinner/flask_iss_tracker:1.0
+1. docker pull vigneshwinner/iss_tracker:1.0
+2. docker run -p 5000:5000 vigneshwinner/iss_tracker:1.0
 
 
 ***Accessing the Flask API:***
