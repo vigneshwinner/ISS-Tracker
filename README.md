@@ -1,4 +1,4 @@
-# Midterm Project: ISS Tracker
+# ISS Tracker
 
 ***Project Overview:*** 
 
